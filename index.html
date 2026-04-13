@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Article Image Overlay</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .article-frame {
+      position: relative;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .article-img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .article-overlay {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="article-frame">
+      <img
+        class="article-img"
+        src="screencapture-bloomberg-opinion-articles-2025-09-16-anti-americanism-is-hurting-us-brands-2025-10-06-09_30_19.png"
+        alt="Article screenshot"
+      >
+      <iframe
+        class="article-overlay"
+        src="index1.html"
+        title="Interactive overlay"
+      ></iframe>
+    </div>
+  </div>
+</body>
+</html>
